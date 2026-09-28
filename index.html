@@ -88,7 +88,7 @@
   a{color:inherit;}
   .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
   section{padding:96px 0;}
-  @media (max-width:700px){ section{padding:64px 0;} }
+  @media (max-width:700px){ section{padding:64px 0;} .hero{padding:56px 0 64px;} }
 
   /* NAV */
   header.nav{
@@ -116,6 +116,12 @@
   .nav-links{display:flex;gap:28px;font-size:.95rem;}
   .nav-links a{text-decoration:none;color:var(--ink-soft);}
   .nav-links a:hover{color:var(--ink);}
+  @media (max-width:640px){
+    .nav-links{display:none;}
+    .nav-inner{padding:14px 20px;}
+    .brand{font-size:1.3rem;}
+    .brand svg{width:24px;height:24px;}
+  }
   .btn{
     display:inline-flex;align-items:center;gap:8px;
     padding:12px 22px;border-radius:8px;
