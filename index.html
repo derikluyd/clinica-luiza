@@ -215,11 +215,12 @@
   footer .fline{margin-top:4px;}
 
   /* MOBILE */
-  .mais,.mbar{display:none;}
+  .mais{display:none;}
   button.btn{font-family:inherit;cursor:pointer;}
   @media (max-width:700px){
     :root{font-size:16px;}
     .wrap{padding:0 20px;}
+    .nav-cta{display:none;}
     .hero{padding:44px 0 56px;}
     .hero-blob{width:340px;height:340px;right:-150px;top:-60px;opacity:.6;}
     .hero h1{max-width:12ch;}
@@ -238,14 +239,6 @@
     .conv-foot .btn{display:flex;justify-content:center;width:100%;}
     .contato .btn,.contato .btn.insta{display:flex;justify-content:center;width:100%;max-width:340px;margin:0 auto 12px;padding:16px 24px;}
     .contato-meta{margin-top:28px;}
-    footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px));}
-    .mbar{
-      display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;
-      padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));
-      background:color-mix(in srgb, var(--bg) 94%, transparent);
-      backdrop-filter:blur(8px);border-top:1px solid var(--line);
-    }
-    .mbar .btn{display:flex;justify-content:center;width:100%;padding:14px;}
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -271,7 +264,7 @@
       <a href="#convenios">Convênios</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn" href="#contato" style="padding:10px 18px;">Agendar</a>
+    <a class="btn nav-cta" href="https://wa.me/5561996508180?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" style="padding:10px 18px;">Agendar</a>
   </div>
 </header>
 
@@ -424,8 +417,6 @@
   <div class="fline">Psicóloga Angel Maria · CRP 01/27860-DF</div>
   <div class="fline"><a href="https://www.instagram.com/clinicaluiza.gama" target="_blank" rel="noopener">Instagram @clinicaluiza.gama</a></div>
 </footer>
-
-<div class="mbar"><a class="btn" href="https://wa.me/5561996508180?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener">Agendar pelo WhatsApp</a></div>
 
 <script>
 (function(){
